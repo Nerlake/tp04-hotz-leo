@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="product-part">
+        <img [src]="produit.image" [alt]="produit.nom" class="image">
+        <span class="product-name">{{produit.nom}}</span>
+        <p class="product-description">{{produit.description}}</p>
+        <span class="product-price">{{produit.prix | currency:'EUR':'symbol-narrow':'1.2-2':'fr'}}</span>
+    </div>
+    <button class="product-button" (click)="ajouterAuPanier(produit)">Ajouter au panier</button>
+</div>

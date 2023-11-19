@@ -1,0 +1,13 @@
+<header>
+
+    <div class="left">
+
+    </div>
+    <div class="center">
+        {{nomTP}} - {{nom}}
+    </div>
+    <div class="right">
+        <a routerLink="/home" class="header-button">Accueil</a>
+        <a routerLink="/panier" class="header-button">Panier({{nbArticles$ | async}})</a>
+    </div>
+</header>
